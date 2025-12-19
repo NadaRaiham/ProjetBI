@@ -46,6 +46,30 @@ Visualisations riches : graphiques linéaires, barres, cercles relatifs, scatter
 Intégration parfaite avec Streamlit, sans configuration complexe
 
 Résumé : Streamlit et Plotly Express ont été choisis pour leur simplicité, leur rapidité de développement et leur compatibilité avec Pandas, permettant de créer des dashboards interactifs et dynamiques adaptés à l’analyse décisionnelle.
+Architecture du projet
+
+Le projet est organisé selon une structure claire afin de faciliter la compréhension, la maintenance et l’évolution du pipeline BI.
+📁 data
+ ├── 📁 raw
+ │   └── Fichiers sources bruts
+ ├── 📁 processed
+ │   └── Données nettoyées et transformées générées par le script transform.py
+ └── 📁 final
+     └── Données finales utilisées pour le data warehouse et le dashboard
+
+📁 scripts
+ └── Ensemble des scripts Python à exécuter (extraction, transformation, chargement, dashboard)
+
+📁 figures
+ └── Captures d’écran illustrant l’exécution de chaque script et les résultats obtenus
+
+📁 reports
+ └── Rapport détaillé expliquant les phases de conception et de réalisation du projet
+
+📄 README.md
+ └── Documentation du projet
+ Cette architecture permet de séparer clairement les données par étape du pipeline BI (raw → processed → final) et de garantir une meilleure lisibilité du projet.
+
 
 Conclusion
 
